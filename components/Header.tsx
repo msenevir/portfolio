@@ -1,9 +1,9 @@
 const Header: React.FC<{}> = () => {
   return (
     <div className="header">
-      <p>Blog</p>
-      <p>Resume</p>
-      <p>Github</p>
+      <p>blog</p>
+      <p>resume</p>
+      <p>github</p>
 
       <style jsx>{`
         .header {

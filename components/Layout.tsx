@@ -12,8 +12,7 @@ const Layout: React.FC<{}> = () => {
           .container {
             margin: 0 auto;
             max-width: 700px;
-            background-color: green;
-            height: 100vh;
+            background-color: white;
           }
         `}
       </style>
@@ -21,7 +20,8 @@ const Layout: React.FC<{}> = () => {
       <style global jsx>
         {`
           body {
-            padding: 20px 30px 30px 30px;
+            padding: 10px;
+            font-family: "Lato", sans-serif;
           }
         `}
       </style>
