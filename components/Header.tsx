@@ -10,6 +10,9 @@ const Header: React.FC<{}> = () => {
 
   return (
     <div className="header">
+      <Link prefetch href="/">
+        <a className={getLinkClassName(pathname, "/")}>home</a>
+      </Link>
       <Link prefetch href="/blog">
         <a className={getLinkClassName(pathname, "/blog")}>blog</a>
       </Link>
@@ -25,6 +28,13 @@ const Header: React.FC<{}> = () => {
           display: flex;
           justify-content: flex-end;
           align-items: center;
+          margin-top: 30px;
+        }
+
+        @media (max-width: 500px) {
+          .header {
+            margin-top: 10px;
+          }
         }
 
         a {
@@ -33,6 +43,7 @@ const Header: React.FC<{}> = () => {
           text-decoration: none;
           transition: color 0.5s ease;
           cursor: pointer;
+          font-size: 13px;
         }
 
         a.active,
