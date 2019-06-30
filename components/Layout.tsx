@@ -1,12 +1,10 @@
 import Header from "./Header";
 
-const Layout: React.FC<{}> = () => {
+const Layout: React.FC<{}> = ({ children }) => {
   return (
     <div className="container">
       <Header />
-      <div>
-        <p>hello</p>
-      </div>
+      <div>{children}</div>
       <style jsx>
         {`
           .container {

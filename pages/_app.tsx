@@ -10,8 +10,7 @@ class AppContainer extends App {
       router: { pathname }
     } = this.props;
 
-    console.log("path", pathname);
-
+    console.log("path", pathname, Component);
     return (
       <Container>
         <Head>
