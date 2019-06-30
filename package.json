@@ -4,21 +4,29 @@
   "author": "Mahen Seneviratne <mxsenevir@gmail.com>",
   "license": "ISC",
   "scripts": {
-    "dev": "next",
+    "dev": "yarn build-posts && next",
+    "export": "yarn build-posts && next build && next export",
+    "static-server": "cd out && python3 -m http.server",
+    "deploy": "yarn clean && yarn export && cd out && now deploy",
     "clean": "rm -rf out .next posts.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
+    "@zeit/next-mdx": "^1.2.0",
     "next": "^8.1.1-canary.57",
     "nprogress": "^0.2.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
   },
   "devDependencies": {
+    "@babel/core": "^7.4.5",
+    "@mdx-js/mdx": "^1.0.21",
     "@types/node": "^12.0.10",
     "@types/nprogress": "^0.2.0",
     "@types/react": "^16.8.22",
     "@types/react-dom": "^16.8.4",
-    "typescript": "^3.5.2"
+    "ts-node": "^8.3.0",
+    "typescript": "^3.5.2",
+    "yargs": "^13.2.4"
   }
 }
