@@ -4,8 +4,8 @@
   "author": "Mahen Seneviratne <mxsenevir@gmail.com>",
   "license": "ISC",
   "scripts": {
-    "dev": "yarn build-posts && next",
-    "export": "yarn build-posts && next build && next export",
+    "dev": "./utils/run.js build-posts && next",
+    "export": "./utils/run.js build-posts && next build && next export",
     "static-server": "cd out && python3 -m http.server",
     "deploy": "yarn clean && yarn export && cd out && now deploy",
     "clean": "rm -rf out .next posts.js",
