@@ -1,13 +1,20 @@
 import Link from "next/link";
+import { useRouter, PublicRouterInstance } from "next/router";
+
+const getLinkClassName = (pathname: string, href: string) => {
+  return `/${pathname.split("/")[1]}` === href ? "active" : "";
+};
 
 const Header: React.FC<{}> = () => {
+  const { pathname }: PublicRouterInstance = useRouter();
+
   return (
     <div className="header">
       <Link prefetch href="/blog">
-        <a>blog</a>
+        <a className={getLinkClassName(pathname, "/blog")}>blog</a>
       </Link>
       <Link prefetch href="/resume">
-        <a>resume</a>
+        <a className={getLinkClassName(pathname, "/resume")}>resume</a>
       </Link>
       <a target="_blank" href="https://github.com/msenevir">
         github
@@ -21,14 +28,16 @@ const Header: React.FC<{}> = () => {
         }
 
         a {
-          color: green;
+          color: #a3afbf;
           padding: 0 10px;
           text-decoration: none;
           transition: color 0.5s ease;
+          cursor: pointer;
         }
 
+        a.active,
         a:hover {
-          color: red;
+          color: black;
         }
       `}</style>
     </div>

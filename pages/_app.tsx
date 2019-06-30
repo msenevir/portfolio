@@ -4,16 +4,13 @@ import Layout from "../components/Layout";
 
 class AppContainer extends App {
   render() {
-    const {
-      Component,
-      pageProps,
-      router: { pathname }
-    } = this.props;
+    const { Component, pageProps } = this.props;
 
-    console.log("path", pathname, Component);
     return (
       <Container>
         <Head>
+          <meta name="viewport" content="width=device-width, initial-scale=1" />
+
           <link
             href="https://fonts.googleapis.com/css?family=Lato"
             rel="stylesheet"
