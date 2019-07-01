@@ -75,8 +75,8 @@ const jobHistory: IJobHistory[] = [
 const Resume: React.FC<{}> = () => {
   return (
     <div>
-      {jobHistory.map(job => (
-        <div className="entry">
+      {jobHistory.map((job, idx) => (
+        <div key={idx} className="entry">
           <div className="info">
             <h4>{job.title}</h4>
             <h4>{job.company}</h4>
