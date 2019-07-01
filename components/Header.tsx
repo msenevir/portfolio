@@ -43,12 +43,12 @@ const Header: React.FC<{}> = () => {
           text-decoration: none;
           transition: color 0.5s ease;
           cursor: pointer;
-          font-size: 13px;
+          font-size: 16px;
         }
 
         a.active,
         a:hover {
-          color: black;
+          color: #f5f5f6;
         }
       `}</style>
     </div>
