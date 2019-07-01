@@ -1,11 +1,12 @@
 {
-  "name": "blog",
+  "name": "portfolio",
   "version": "1.0.0",
   "author": "Mahen Seneviratne <mxsenevir@gmail.com>",
   "license": "ISC",
   "scripts": {
     "dev": "./utils/run.js build-posts && next",
     "export": "./utils/run.js build-posts && next build && next export",
+    "start": "exec next start",
     "static-server": "cd out && python3 -m http.server",
     "deploy": "yarn clean && yarn export && cd out && now deploy",
     "clean": "rm -rf out .next posts.js",
