@@ -55,10 +55,12 @@ const AboutMe: React.FC<IProps> = ({ speed, title }) => {
 
         .content.hide {
           opacity: 0;
+          visibility: hidden;
         }
 
         .content.show {
           opacity: 1;
+          visibility: visible;
           transition: opacity 2s;
         }
       `}</style>

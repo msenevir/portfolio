@@ -9,7 +9,10 @@ class AppContainer extends App {
     return (
       <Container>
         <Head>
+          <title>Mahen Seneviratne</title>
+          <meta name="Description" content="personal portfolio" />
           <meta name="viewport" content="width=device-width, initial-scale=1" />
+          <meta name="theme-color" content="#191919" />
 
           <link
             href="https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed"

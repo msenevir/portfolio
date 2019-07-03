@@ -9,7 +9,7 @@ const Header: React.FC<{}> = () => {
   const { pathname }: PublicRouterInstance = useRouter();
 
   return (
-    <div className="header">
+    <nav>
       <Link prefetch href="/">
         <a className={getLinkClassName(pathname, "/")}>home</a>
       </Link>
@@ -19,12 +19,12 @@ const Header: React.FC<{}> = () => {
       <Link prefetch href="/resume">
         <a className={getLinkClassName(pathname, "/resume")}>resume</a>
       </Link>
-      <a target="_blank" href="https://github.com/msenevir">
+      <a target="_blank" rel="noreferrer" href="https://github.com/msenevir">
         github
       </a>
 
       <style jsx>{`
-        .header {
+        nav {
           display: flex;
           justify-content: flex-end;
           align-items: center;
@@ -32,7 +32,7 @@ const Header: React.FC<{}> = () => {
         }
 
         @media (max-width: 500px) {
-          .header {
+          nav {
             margin-top: 10px;
           }
         }
@@ -51,7 +51,7 @@ const Header: React.FC<{}> = () => {
           color: #f5f5f6;
         }
       `}</style>
-    </div>
+    </nav>
   );
 };
 

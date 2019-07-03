@@ -10,7 +10,7 @@ const Layout: React.FC<{}> = ({ children }) => {
   return (
     <div className="container">
       <Header />
-      <div className="content">{children}</div>
+      <main className="content">{children}</main>
       <style jsx>
         {`
           .container {
