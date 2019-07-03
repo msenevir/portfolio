@@ -1,32 +1,42 @@
 {
-  "name": "portfolio",
-  "version": "1.0.0",
-  "author": "Mahen Seneviratne <mxsenevir@gmail.com>",
-  "license": "ISC",
-  "scripts": {
-    "dev": "./utils/run.js build-posts && next",
-    "index-posts": "yarn clean && ./utils/run.js build-posts",
-    "now-build": "next build && next export -o dist",
-    "clean": "rm -rf out dist .next posts.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "dependencies": {
-    "@zeit/next-mdx": "^1.2.0",
-    "next": "^8.1.1-canary.57",
-    "next-offline": "^4.0.2",
-    "nprogress": "^0.2.0",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6"
-  },
-  "devDependencies": {
-    "@babel/core": "^7.4.5",
-    "@mdx-js/mdx": "^1.0.21",
-    "@types/node": "^12.0.10",
-    "@types/nprogress": "^0.2.0",
-    "@types/react": "^16.8.22",
-    "@types/react-dom": "^16.8.4",
-    "ts-node": "^8.3.0",
-    "typescript": "^3.5.2",
-    "yargs": "^13.2.4"
-  }
+    "name": "portfolio",
+    "version": "1.0.0",
+    "author": "Mahen Seneviratne <mxsenevir@gmail.com>",
+    "license": "ISC",
+    "scripts": {
+        "dev": "./utils/run.js build-posts && next",
+        "index-posts": "yarn clean && ./utils/run.js build-posts",
+        "now-build": "next build && next export -o dist",
+        "clean": "rm -rf out dist .next posts.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "prettier": {
+        "semi": false,
+        "printWidth": 80,
+        "tabWidth": 4,
+        "singleQuote": true,
+        "trailingComma": "es5",
+        "bracketSpacing": true,
+        "jsxBracketSameLine": false
+    },
+    "dependencies": {
+        "@zeit/next-mdx": "^1.2.0",
+        "next": "^8.1.1-canary.57",
+        "next-offline": "^4.0.2",
+        "nprogress": "^0.2.0",
+        "react": "^16.8.6",
+        "react-dom": "^16.8.6"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.4.5",
+        "@mdx-js/mdx": "^1.0.21",
+        "@types/node": "^12.0.10",
+        "@types/nprogress": "^0.2.0",
+        "@types/react": "^16.8.22",
+        "@types/react-dom": "^16.8.4",
+        "prettier": "^1.18.2",
+        "ts-node": "^8.3.0",
+        "typescript": "^3.5.2",
+        "yargs": "^13.2.4"
+    }
 }

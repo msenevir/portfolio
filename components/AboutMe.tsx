@@ -1,71 +1,71 @@
-import React from "react";
+import React from 'react'
 
 interface IProps {
-  speed: number;
-  title: string;
+    speed: number
+    title: string
 }
 
 const AboutMe: React.FC<IProps> = ({ speed, title }) => {
-  const [text, setText] = React.useState<string>("");
-  const interval = React.useRef<NodeJS.Timeout | null>(null);
+    const [text, setText] = React.useState<string>('')
+    const interval = React.useRef<NodeJS.Timeout | null>(null)
 
-  const doneTyping = () => text === title;
+    const doneTyping = () => text === title
 
-  const startTyping = () => {
-    setText(newText => title.substring(0, newText.length + 1));
-  };
-
-  React.useEffect(() => {
-    interval.current = setInterval(startTyping, speed);
-
-    return () => {
-      clearInterval(interval.current!);
-    };
-  }, []);
-
-  React.useEffect(() => {
-    if (doneTyping()) {
-      clearInterval(interval.current!);
+    const startTyping = () => {
+        setText(newText => title.substring(0, newText.length + 1))
     }
-  }, [text]);
 
-  return (
-    <div className="container">
-      <span>{text}</span>
-      <div className={`content ${doneTyping() ? "show" : "hide"}`}>
-        Software Engineer. Avid Learner.
-      </div>
+    React.useEffect(() => {
+        interval.current = setInterval(startTyping, speed)
 
-      <style jsx>{`
-        .container {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          flex-direction: column;
-          height: 40%;
+        return () => {
+            clearInterval(interval.current!)
         }
+    }, [])
 
-        span {
-          font-size: 45px;
+    React.useEffect(() => {
+        if (doneTyping()) {
+            clearInterval(interval.current!)
         }
+    }, [text])
 
-        .content {
-          margin-top: 20px;
-        }
+    return (
+        <div className="container">
+            <span>{text}</span>
+            <div className={`content ${doneTyping() ? 'show' : 'hide'}`}>
+                Software Engineer. Avid Learner.
+            </div>
 
-        .content.hide {
-          opacity: 0;
-          visibility: hidden;
-        }
+            <style jsx>{`
+                .container {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    height: 40%;
+                }
 
-        .content.show {
-          opacity: 1;
-          visibility: visible;
-          transition: opacity 2s;
-        }
-      `}</style>
-    </div>
-  );
-};
+                span {
+                    font-size: 45px;
+                }
 
-export default AboutMe;
+                .content {
+                    margin-top: 20px;
+                }
+
+                .content.hide {
+                    opacity: 0;
+                    visibility: hidden;
+                }
+
+                .content.show {
+                    opacity: 1;
+                    visibility: visible;
+                    transition: opacity 2s;
+                }
+            `}</style>
+        </div>
+    )
+}
+
+export default AboutMe
