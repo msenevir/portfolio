@@ -6,6 +6,7 @@
     "scripts": {
         "dev": "./utils/run.js build-posts && next",
         "index-posts": "yarn clean && ./utils/run.js build-posts",
+        "deploy": "yarn index-posts && now --target production",
         "now-build": "next build && next export -o dist",
         "clean": "rm -rf out dist .next posts.js",
         "type-check": "tsc"

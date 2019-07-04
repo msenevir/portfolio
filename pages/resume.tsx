@@ -53,7 +53,7 @@ const jobHistory: IJobHistory[] = [
         date: 'Jan 2013 - Jan 2015',
         bullets: [
             'Tutored individual students and classes (20-30 students) in SAT and ACT concepts.',
-            'Kept in close contact with students and monitored their progress closely.',
+            'Kept in contact with students and monitored their progress closely.',
         ],
     },
     {
@@ -67,7 +67,7 @@ const jobHistory: IJobHistory[] = [
             'Created a simple, user-friendly frontend using AngularJS and Bootstrap.',
             'Managed and stored data with MongoDB.',
             'Implemented security with OAuth.',
-            'Wrote unit tests with JUnit and mocks with Mockito.',
+            'Created test suite with JUnit and Mockito',
         ],
     },
 ]
