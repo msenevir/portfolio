@@ -1,12 +1,12 @@
 import Link from 'next/link'
-import { useRouter, PublicRouterInstance } from 'next/router'
+import { useRouter } from 'next/router'
 
 const getLinkClassName = (pathname: string, href: string) => {
     return `/${pathname.split('/')[1]}` === href ? 'active' : ''
 }
 
 const Header: React.FC<{}> = () => {
-    const { pathname }: PublicRouterInstance = useRouter()
+    const { pathname } = useRouter()
 
     return (
         <nav>

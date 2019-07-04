@@ -8,7 +8,7 @@
         "index-posts": "yarn clean && ./utils/run.js build-posts",
         "now-build": "next build && next export -o dist",
         "clean": "rm -rf out dist .next posts.js",
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "type-check": "tsc"
     },
     "prettier": {
         "semi": false,
@@ -21,18 +21,22 @@
     },
     "dependencies": {
         "@zeit/next-mdx": "^1.2.0",
-        "next": "^8.1.1-canary.57",
+        "@zeit/next-typescript": "^1.1.1",
+        "next": "^8.1.0",
         "next-offline": "^4.0.2",
         "nprogress": "^0.2.0",
         "react": "^16.8.6",
         "react-dom": "^16.8.6"
     },
     "devDependencies": {
-        "@babel/core": "^7.4.5",
+        "@babel/core": "^7.5.0",
+        "@babel/plugin-transform-modules-commonjs": "^7.5.0",
+        "@babel/preset-react": "^7.0.0",
         "@mdx-js/mdx": "^1.0.21",
-        "@types/node": "^12.0.10",
+        "@types/next": "^8.0.5",
+        "@types/node": "^12.0.12",
         "@types/nprogress": "^0.2.0",
-        "@types/react": "^16.8.22",
+        "@types/react": "^16.8.23",
         "@types/react-dom": "^16.8.4",
         "prettier": "^1.18.2",
         "ts-node": "^8.3.0",

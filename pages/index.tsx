@@ -1,9 +1,8 @@
 import React from 'react'
-import { NextPage } from 'next'
 
 import AboutMe from '../components/AboutMe'
 
-const IndexPage: NextPage<{}> = () => (
+const IndexPage: React.FC<{}> = () => (
     <AboutMe speed={70} title="Mahen Seneviratne" />
 )
 

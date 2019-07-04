@@ -18,6 +18,14 @@ class AppContainer extends App {
                     <meta name="theme-color" content="#191919" />
 
                     <link
+                        rel="shortcut icon"
+                        type="image/png"
+                        href="/static/favicon192.png"
+                    />
+
+                    <link rel="manifest" href="/static/manifest.json" />
+
+                    <link
                         href="https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed"
                         rel="stylesheet"
                         key="google-font-open-sans"
