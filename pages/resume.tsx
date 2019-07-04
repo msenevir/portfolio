@@ -67,7 +67,7 @@ const jobHistory: IJobHistory[] = [
             'Created a simple, user-friendly frontend using AngularJS and Bootstrap.',
             'Managed and stored data with MongoDB.',
             'Implemented security with OAuth.',
-            'Created test suite with JUnit and Mockito',
+            'Created test suite with JUnit and Mockito.',
         ],
     },
 ]
