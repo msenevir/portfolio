@@ -7,8 +7,13 @@ const Home: NextPage = () => {
       <h1 className="home-title">Mahen Seneviratne</h1>
 
       <p>
-        I'm a software engineer at{" "}
-        <a className="home-link" href="https://www.nytimes.com" target="_blank">
+        I&apos;m a software engineer at{" "}
+        <a
+          className="home-link"
+          href="https://www.nytimes.com"
+          target="_blank"
+          rel="noreferrer"
+        >
           The New York Times.
         </a>
       </p>

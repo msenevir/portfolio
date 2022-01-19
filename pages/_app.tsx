@@ -19,10 +19,6 @@ function MyApp({ Component, pageProps }: AppProps) {
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
         />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Roboto&display=optional"
-          rel="stylesheet"
-        />
       </Head>
 
       <header>
@@ -66,6 +62,7 @@ function MyApp({ Component, pageProps }: AppProps) {
               className="nav-list-link"
               href="https://github.com/msenevir"
               target="_blank"
+              rel="noreferrer"
             >
               GITHUB
             </a>
