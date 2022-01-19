@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg style="background:#FFFFFF" version="1.1" viewBox="0 0 52 60" xmlns="http://www.w3.org/2000/svg">
+    <title>logo</title>
+    <g fill-rule="evenodd">
+        <path d="m26 1.7321l24.481 14.134v28.268l-24.481 14.134-24.481-14.134v-28.268l24.481-14.134z" fill="#fff" stroke="#000" stroke-width="3"/>
+        <text fill="#000000" font-family="DINAlternate-Bold, DIN Alternate" font-size="26" font-weight="bold">
+            <tspan x="16.1484375" y="39">M</tspan>
+        </text>
+    </g>
+</svg>

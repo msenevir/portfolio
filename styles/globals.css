@@ -1,16 +1,124 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+::selection {
+  color: #fff;
+  background-color: #ed0000;
 }
 
-a {
-  color: inherit;
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  color: #34495e;
+  font-size: 15px;
+  line-height: 1.6;
+  background-color: #fff;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+ul.nav {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+ul {
+  margin: 1rem 0;
+}
+
+a,
+a:active {
+  color: #2c3e50;
   text-decoration: none;
 }
 
-* {
-  box-sizing: border-box;
+a.nav-list-link.active,
+a.nav-list-link:hover,
+a.post-title-link:hover {
+  border-bottom: 2px solid #ed0000;
+}
+
+hr {
+  border: 0;
+}
+
+@media screen and (min-width: 700px) {
+  .wrap {
+    width: 700px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .wrap {
+    width: 100%;
+  }
+
+  header ul.nav.nav-list {
+    float: none;
+    display: block;
+    text-align: center;
+  }
+
+  header li.nav-list-item {
+    padding: 10px 10px;
+  }
+
+  main.container {
+    margin-top: 0;
+    padding: 20px;
+  }
+}
+
+header {
+  padding: 20px 0;
+  min-height: 60px;
+}
+
+header .nav {
+  float: right;
+  left: 80px;
+}
+
+header .nav-list-item {
+  display: inline-block;
+  padding: 19px 10px;
+}
+
+header .nav-list-item a {
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+.home-title {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+a.home-link {
+  color: #ed0000;
+}
+
+.resume-entry {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.resume-info {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 5px;
+  font-size: 18px;
+}
+
+.resume-date {
+  padding-bottom: 10px;
+  font-size: 14px;
+}
+
+.resume-bullet {
+  margin-bottom: 10px;
 }
