@@ -16,7 +16,7 @@ const jobHistory: IJobHistory[] = [
     bullets: [
       "Worked on in-house A/B testing software, maintaining multiple backend APIs and client libraries written in Golang and JavaScript.",
       "Designed ETL pipeline in Google Cloud BigQuery to allow newsroom editors to understand how the New York Times homepage is performing.",
-      "Created System of Record (SOR) containing a curated set of metrics enabling the company to interpret A/B test performance.",
+      "Created System of Record (SOR) containing a curated set of metrics enabling the company to interpret A/B test performance to drive growth and engagement.",
       "Overhauled an outdated user interface for creating A/B tests into a modern React application using server side rendering and code splitting.",
       "Developed migration software to help transition company between business intelligence tools.",
     ],
