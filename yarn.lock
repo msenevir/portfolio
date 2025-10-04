@@ -568,7 +568,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react-dom@npm:^19":
+"@types/react-dom@npm:^19.2.0":
   version: 19.2.0
   resolution: "@types/react-dom@npm:19.2.0"
   peerDependencies:
@@ -577,7 +577,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:^19":
+"@types/react@npm:^19.2.0":
   version: 19.2.0
   resolution: "@types/react@npm:19.2.0"
   dependencies:
@@ -863,8 +863,8 @@ __metadata:
   dependencies:
     "@tailwindcss/postcss": "npm:^4"
     "@types/node": "npm:^20"
-    "@types/react": "npm:^19"
-    "@types/react-dom": "npm:^19"
+    "@types/react": "npm:^19.2.0"
+    "@types/react-dom": "npm:^19.2.0"
     next: "npm:15.5.4"
     react: "npm:19.1.0"
     react-dom: "npm:19.1.0"
